@@ -27,6 +27,7 @@ public class audioManager : MonoBehaviour
         SFXSource.PlayOneShot(clip);
     }
 
+    // Pause music if audio icon is pressed
     public void ToggleMusic()
     {
         //musicSource.mute = !musicSource.mute;
