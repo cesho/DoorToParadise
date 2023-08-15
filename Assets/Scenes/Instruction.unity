@@ -154,7 +154,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -582,6 +582,7 @@ MonoBehaviour:
   dice: {fileID: 0}
   destination: {fileID: 0}
   background3: {fileID: 0}
+  _currentTime: 0
 --- !u!4 &1245094464
 Transform:
   m_ObjectHideFlags: 0

@@ -16,6 +16,8 @@ public class audioManager : MonoBehaviour
     public AudioClip destination;
     public AudioClip background3;
 
+    public float _currentTime;
+
     private void start()
     {
         musicSource.clip = background;
@@ -33,10 +35,12 @@ public class audioManager : MonoBehaviour
         //musicSource.mute = !musicSource.mute;
         if(musicSource.isPlaying)
         {
+            _currentTime = musicSource.time;
             musicSource.Pause();
         }
         else
         {
+            musicSource.time = _currentTime;
             musicSource.UnPause();
         }
     }
